@@ -40,6 +40,15 @@ h1 {
 #info section {
   size: 50px
 }
+.icon {
+  height: 120px;
+  width: 120px;
+  border: 3px solid #5900ff;
+  cursor: pointer;
+}
+#circle {
+  border-radius: 50%;
+}
 button {
   border-radius: 8px;
   border: 3px inset transparent;
@@ -229,4 +238,32 @@ section h1 {
 
 ::-webkit-scrollbar-thumb:hover {
  background-color: purple;
+}
+#hov {
+  display: none;
+  position: absolute;
+  background-color: #290038;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+#hov a {
+  color: #5c5c5c;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.byp:hover #hov {display: block;}
+.icons {
+  display: inline-block;
+  vertical-align: middle;
+}
+.update:hover #hov {display: block;}
+.update {
+  display: inline-block;
+  vertical-align: middle;
+}
+.byp{
+  display: inline-block;
+  vertical-align: middle;
 }
